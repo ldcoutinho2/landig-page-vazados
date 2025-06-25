@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MC Mirella te Chamando no Whats</title>
+    <title>MC Mirella Ao Vivo no WhatsApp</title>
     <link rel="icon" href="logo.png">
 
-    <!-- Meta Pixel Code -->
+    <!-- Pixel Meta -->
     <script>
       !function(f,b,e,v,n,t,s)
       {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -26,76 +26,86 @@
 
     <style>
         body {
-            background-color: #0b141a;
-            font-family: sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            font-family: sans-serif;
+            background-color: #0b141a;
             color: white;
         }
         .chat {
             max-width: 420px;
-            margin: auto;
+            margin: 30px auto;
             background-color: #111;
             border-radius: 15px;
             box-shadow: 0 0 15px #25d366;
             padding: 20px;
-            position: relative;
         }
         .profile {
             display: flex;
             align-items: center;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
-        .profile img {
+        .profile-pic {
             width: 60px;
             height: 60px;
             border-radius: 50%;
-            border: 2px solid #25d366;
-            margin-right: 15px;
-            position: relative;
+            border: 3px solid red;
+            animation: pulse 1.5s infinite;
+            margin-right: 10px;
         }
-        .profile::after {
-            content: 'AO VIVO';
-            position: absolute;
-            top: 58px;
-            left: 60px;
-            background: red;
-            color: white;
-            font-size: 10px;
-            padding: 2px 5px;
-            border-radius: 4px;
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(255,0,0,0.6); }
+            70% { box-shadow: 0 0 0 10px rgba(255,0,0,0); }
+            100% { box-shadow: 0 0 0 0 rgba(255,0,0,0); }
         }
-        .name {
+        .profile-name {
+            font-size: 16px;
             font-weight: bold;
-            font-size: 18px;
-            color: white;
         }
-        .msg {
+        .bubble {
             background-color: #202c33;
-            padding: 14px;
-            border-radius: 12px;
+            border-radius: 15px;
+            padding: 15px;
+            position: relative;
             margin-top: 10px;
-            font-size: 15px;
+        }
+        .bubble:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -10px;
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-right: 10px solid #202c33;
+            border-bottom: 10px solid transparent;
+        }
+        .time {
+            font-size: 12px;
+            color: #ccc;
+            margin-top: 5px;
+            text-align: right;
         }
         .btn {
-            display: block;
-            margin-top: 20px;
             background-color: #25d366;
             color: white;
-            padding: 15px 25px;
+            padding: 14px;
             border: none;
             border-radius: 10px;
             font-size: 18px;
             text-align: center;
             text-decoration: none;
+            display: block;
+            margin: 25px auto 10px;
+            width: 90%;
         }
         .btn:hover {
             background-color: #1ebe5d;
         }
         .footer {
             text-align: center;
-            margin-top: 30px;
             font-size: 11px;
+            margin-top: 20px;
             color: #aaa;
         }
     </style>
@@ -104,27 +114,29 @@
 <body>
 <div class="chat">
     <div class="profile">
-        <img src="logo.png" alt="MC Mirella">
-        <div class="name">MC Mirella</div>
+        <img src="logo.png" class="profile-pic" alt="MC Mirella">
+        <div class="profile-name">MC Mirella • Online agora</div>
     </div>
 
-    <div class="msg">
-        Ei amor... 😏<br>
-        Te vi online e fiquei com vontade de te mostrar mais...<br>
-        Quer continuar a chamada comigo AO VIVO?<br>
-        Tô aqui, peladinha, me tocando, esperando você...<br>
-        Só clicar no botão e vem ver tudo. Vou gemer seu nome até você gozar junto comigo ❤️<br><br>
-        <strong>R$9,90 - acesso imediato</strong>
+    <div class="bubble">
+        Amor... você caiu da chamada? 😕<br><br>
+        Tô aqui... peladinha, ao vivo, com a câmera ligada...<br>
+        Me tocando... pensando em você... pronta pra continuar...<br>
+        Quero falar seu nome gemendo enquanto gozo na sua frente ❤️<br><br>
+        ⚠️ Só clica aqui e volta... só R$9,90 pra me ver toda sua...
+        <div class="time">visto às 14:37</div>
     </div>
 
-    <a href="https://seulinkdecheckout.com" class="btn" onclick="fbq('track', 'InitiateCheckout')">🚀 CONTINUAR A CHAMADA AGORA</a>
+    <a href="https://seulinkdecheckout.com" class="btn" onclick="fbq('track', 'InitiateCheckout')">✨ CONTINUAR A CHAMADA AGORA</a>
 
     <div class="footer">
-        Simulação de chat. Não vinculado ao WhatsApp. Conteúdo +18.
+        chamada privada.<br>
+        Conteúdo +18. Venda de experiência digital.
     </div>
 </div>
 </body>
 </html>
+
 
 
 
