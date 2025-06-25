@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamada de Vídeo com a MC Mirella</title>
+    <title>MC Mirella te Chamando no Whats</title>
     <link rel="icon" href="logo.png">
 
     <!-- Meta Pixel Code -->
@@ -27,98 +27,100 @@
     <style>
         body {
             background-color: #0b141a;
-            color: white;
-            font-family: Arial, sans-serif;
+            font-family: sans-serif;
             margin: 0;
-            padding: 0;
-            text-align: center;
+            padding: 20px;
+            color: white;
         }
-        .container {
+        .chat {
             max-width: 420px;
-            margin: 30px auto;
-            padding: 25px;
+            margin: auto;
             background-color: #111;
-            border-radius: 12px;
-            box-shadow: 0 0 20px #25d366;
+            border-radius: 15px;
+            box-shadow: 0 0 15px #25d366;
+            padding: 20px;
+            position: relative;
         }
-        .logo {
-            width: 70px;
+        .profile {
+            display: flex;
+            align-items: center;
             margin-bottom: 20px;
         }
-        .alert {
-            background-color: #25d366;
-            padding: 10px;
-            border-radius: 8px;
-            font-weight: bold;
-            font-size: 14px;
+        .profile img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid #25d366;
+            margin-right: 15px;
+            position: relative;
         }
-        h1 {
-            color: #25d366;
-            margin-top: 15px;
+        .profile::after {
+            content: 'AO VIVO';
+            position: absolute;
+            top: 58px;
+            left: 60px;
+            background: red;
+            color: white;
+            font-size: 10px;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+        .name {
+            font-weight: bold;
+            font-size: 18px;
+            color: white;
         }
         .msg {
             background-color: #202c33;
-            border-radius: 10px;
-            padding: 18px;
-            text-align: left;
-            margin-top: 20px;
+            padding: 14px;
+            border-radius: 12px;
+            margin-top: 10px;
             font-size: 15px;
-            line-height: 1.6em;
         }
         .btn {
+            display: block;
+            margin-top: 20px;
             background-color: #25d366;
             color: white;
-            padding: 16px 30px;
+            padding: 15px 25px;
             border: none;
             border-radius: 10px;
-            font-size: 20px;
-            cursor: pointer;
+            font-size: 18px;
+            text-align: center;
             text-decoration: none;
-            display: inline-block;
-            margin-top: 30px;
         }
         .btn:hover {
             background-color: #1ebe5d;
         }
         .footer {
-            margin-top: 25px;
+            text-align: center;
+            margin-top: 30px;
             font-size: 11px;
-            color: #ccc;
-        }
-        .price {
-            font-size: 26px;
-            color: #25d366;
-            margin-top: 20px;
-            font-weight: bold;
+            color: #aaa;
         }
     </style>
 </head>
 
 <body>
-<div class="container">
-    <img src="logo.png" class="logo" alt="WhatsApp">
-    <div class="alert">⚠️ CONTINUAÇÃO DISPONÍVEL SOMENTE POR TEMPO LIMITADO!
+<div class="chat">
+    <div class="profile">
+        <img src="logo.png" alt="MC Mirella">
+        <div class="name">MC Mirella</div>
     </div>
-    <h1>Quer continuar a chamada com a MC Mirella?</h1>
 
     <div class="msg">
-        <strong>Mirella está te esperando ao vivo:</strong><br><br>
-        “Você atendeu, viu minha boquinha... sentiu o clima...<br>
-        Agora é sua chance de ver TUDO, sem censura. <br>
-        Ao vivo, eu vou me tocar, falar teu nome, gemer...<br>
-        Até ver você gozar junto comigo na câmera! ❤️”
+        Ei amor... 😏<br>
+        Te vi online e fiquei com vontade de te mostrar mais...<br>
+        Quer continuar a chamada comigo AO VIVO?<br>
+        Tô aqui, peladinha, me tocando, esperando você...<br>
+        Só clicar no botão e vem ver tudo. Vou gemer seu nome até você gozar junto comigo ❤️<br><br>
+        <strong>R$9,90 - acesso imediato</strong>
     </div>
 
-    <div class="price">
-        APENAS R$9,90 - ACESSO IMEDIATO
-    </div>
-
-    <a href="https://seulinkdecheckout.com" class="btn" onclick="fbq('track', 'InitiateCheckout')">✨ LIBERAR CHAMADA AGORA
-    </a>
+    <a href="https://seulinkdecheckout.com" class="btn" onclick="fbq('track', 'InitiateCheckout')">🚀 CONTINUAR A CHAMADA AGORA</a>
 
     <div class="footer">
-        Site independente. Nenhum vínculo com WhatsApp, Meta ou terceiros.<br>
-        Produto +18. Conteúdo 100% digital. Experiência simulatória.
+        Simulação de chat. Não vinculado ao WhatsApp. Conteúdo +18.
     </div>
 </div>
 </body>
